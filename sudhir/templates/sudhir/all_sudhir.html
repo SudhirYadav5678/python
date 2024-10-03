@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}Sudhir{% endblock %}
+{% block content %}
+<h1>Hello Sudhir</h1>
+{% for chai in chais  %}
+<div class='bg-green-400'>
+    <img src="{{chai.image.url}}" alt="">
+</div>
+ {% endfor %}
+{% endblock %}
+
